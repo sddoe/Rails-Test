@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= form.label :birth_date %>
-    <%= form.date_select :birth_date %>
+    <%= form.date_select :birth_date, start_year: Date.today.year - 110, end_year: Date.today.year %>
   </div>
 
   <div class="field">
     <%= form.label :gender %>
-    <%= form.number_field :gender %>
+    <%= form.collection_radio_buttons :gender, User.genders, :first, :first %>
   </div>
 
   <div class="field">

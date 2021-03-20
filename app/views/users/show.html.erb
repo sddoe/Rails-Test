@@ -3,22 +3,22 @@
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
-</p>
+</p><br>
 
 <p>
   <strong>Birth date:</strong>
   <%= @user.birth_date %>
-</p>
+</p><br>
 
 <p>
   <strong>Gender:</strong>
   <%= @user.gender %>
-</p>
+</p><br>
 
 <p>
   <strong>Image url:</strong>
   <%= @user.image_url %>
-</p>
+</p><br>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
